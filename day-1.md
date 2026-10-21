@@ -7,3 +7,9 @@
 - [ ] Convert my first blog post into an actual webpage.
 
 <h2>## Review</h2>
+
+Convert an image or video from dark mode to light mode using [ffmpg](https://www.ffmepg.org)
+
+```bash
+ffmpeg -1 input.mp4 -vf "negate, hue=h=180,eq=contrast=1.2:saturation=1.1" output.mp4
+```
